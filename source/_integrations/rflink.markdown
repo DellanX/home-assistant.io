@@ -4,6 +4,7 @@ description: Instructions on how to integrate RFLink gateway into Home Assistant
 logo: rflink.png
 ha_category:
   - Hub
+ha_iot_class: Assumed State
 ha_release: 0.38
 ha_domain: rflink
 ---
@@ -116,9 +117,9 @@ sensor:
     automatic_add: true
 ```
 
-[RFLink Switches](/integrations/switch.rflink/) and [RFLink Binary Sensors](/integrations/binary_sensor.rflink/) cannot be added automatically. 
+[RFLink Switches](/integrations/switch.rflink/) and [RFLink Binary Sensors](/integrations/binary_sensor.rflink/) cannot be added automatically.
 
-The RFLink integration does not know the difference between a binary sensor, a switch and a light. Therefore all switchable devices are automatically added as light by default. However, once the ID of a switch is known, it can be used to configure it as a switch or a binary sensor type in Home Assistant, for example, to add it to a different group, hide it or configure a nice name.
+The RFLink integration does not know the difference between a binary sensor, a switch and a light. Therefore all switchable devices are automatically added as light by default. However, once the ID of a switch is known, it can be used to configure it as a switch or a binary sensor type in Home Assistant, for example, to add it to a different group or configure a nice name.
 
 ### Ignoring devices
 
